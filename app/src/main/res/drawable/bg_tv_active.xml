@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected state: show bottom line -->
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item android:top="38dp">
+                <shape android:shape="rectangle">
+                    <size android:height="4dp" />
+                    <solid android:color="@color/pizazz"/> <!-- Orange or active color -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+
+    <item android:state_selected="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item android:top="38dp">
+                <shape android:shape="rectangle">
+                    <size android:height="4dp" />
+                    <solid android:color="@color/alabaster"/> <!-- Orange or active color -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+
+</selector>
+
+
